@@ -1,8 +1,7 @@
 {{#each beersFromApi}}
-<div id="all-beers">
-    <img id="beer-image" src="{{this.image_url}}" alt="{{this.name}}">
-    <h5>{{this.name}}</h5>
-    <p><span>Description:</span> {{this.description}}</p>
-    <p><span>Tagline:</span> {{this.tagline}}</p>
-</div>
+{{>beerPartial this}}
 {{/each}}
+
+
+
+
